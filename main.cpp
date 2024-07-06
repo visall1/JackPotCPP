@@ -31,9 +31,9 @@ int main()
     
     // Generate random numbers.
     srand(time(NULL));
-    int i1=rand()%50;
-    int i2=rand()%50;
-    int i3=rand()%50;
+    int i1=rand()%10 + 20;
+    int i2=rand()%10 + 20;
+    int i3=rand()%10 + 20;
     
     // Find the maximum of the three random numbers.
     int m = max(i1,max(i2,i3));
@@ -46,11 +46,11 @@ int main()
         
         // If the second random number is greater than 0,
         // extract an element from the second queue.
-        if(i2-->0) q2.Extract();
+        if(i2-->0||i2==m) q2.Extract();
         
         // If the third random number is greater than 0,
         // extract an element from the third queue.
-        if(i3-->0) q3.Extract();
+        if(i3-->0||i3==m) q3.Extract();
         
         // Display the current state of the queues.
         q.Show(1,1);
