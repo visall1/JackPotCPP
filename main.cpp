@@ -15,7 +15,7 @@ int main()
      .Add("France")
      .Add("Portugal")
      .Add("Germany");
-    q<<"Netherland"<<"Swiss"<<"England";
+    q<<"Netherland"<<"Swiss"<<"England"<<"Japen";
     CircularQueue q2 = q;
     CircularQueue q3 = q;
     
